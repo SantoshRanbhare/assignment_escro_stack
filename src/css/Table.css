@@ -1,0 +1,20 @@
+.table-container{
+    position: relative;
+
+    top:35vh;
+    left:30vh;
+    padding:10px;  
+}
+
+table th,tr,td{
+    padding:20px; 
+    border-collapse: collapse ;
+    border-collapse: separate ;
+    border-bottom: 1px solid black;
+}
+table td:last-child{
+    border-bottom: none;
+}
+table{
+    border: 1px solid black;
+}

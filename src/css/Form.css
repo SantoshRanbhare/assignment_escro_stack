@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://cdn.pixabay.com/photo/2014/03/22/17/00/the-background-292720_1280.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container::selection {
+    user-select: none;
+}
+
+form {
+    background: linear-gradient(rgba(135, 207, 235, 0.642), rgb(144, 205, 230));
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 350px;
+    width: 500px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    position: relative;
+}
+
+.error-message {
+    color: red;
+}
+
+form .form-heading {
+    position: absolute;
+    top: 25px;
+}
+
+form .form-heading h1 {
+    color: #20deff;
+    text-shadow: 2px 4px 4px rgb(61, 1, 52);
+    text-transform: uppercase;
+}
+
+form div input {
+    height: 40px;
+    width: 350px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 6px;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+form div input:focus {
+    outline: none;
+}
+
+.login-btn {
+    padding: 15px 40px;
+    border: none;
+    background-color: mediumseagreen;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.login-btn:active {
+    transform: scale(0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    form {
+        width: 400px;
+        height: 300px;
+    }
+
+    form div input {
+        width: 300px;
+    }
+
+    .login-btn {
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 80%;
+        height: 300px ;
+        padding: 20px;
+    }
+
+    form div input {
+        width: 250px;
+    }
+
+    .login-btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .form-heading {
+        /* position: static; */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    form {
+        width: 80%;
+        height: 250px;
+        padding: 10px;
+    }
+
+    form div input {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .login-btn {
+        width: 90%;
+        padding: 10px;
+    }
+    .form-heading {
+        transform: translateY(-25px);
+    }
+}

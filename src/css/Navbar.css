@@ -1,0 +1,149 @@
+nav {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.25);
+    width: 230px;
+}
+
+.nav-main-logo {
+    padding-top: 10px;
+}
+
+.nav-head {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.nav-head-logo {
+    height: 20px;
+    width: 30px;
+    position: relative;
+    top: 4px;
+}
+
+a {
+    color: #333;
+}
+
+.nav-links a:link,
+.nav-links a:visited {
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.nav-links a:hover {
+    background-color: navy;
+    color: white;
+}
+
+.nav-main-logout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-logout {
+    margin: 40px;
+}
+
+.nav-logout-logo {
+    height: 20px;
+    width: 30px;
+    position: relative;
+    top: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    nav {
+        width: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 150px;
+    }
+
+    .nav-head-logo, .nav-logout-logo {
+        height: 15px;
+        width: 25px;
+    }
+
+    .nav-links a:link, .nav-links a:visited {
+        padding: 8px 16px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-logout {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        height: auto;
+        width: 100%;
+        padding-top: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .nav-head {
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        width: auto;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 10px;
+        width: auto;
+    }
+
+    .nav-main-logout {
+        width: auto;
+        justify-content: center;
+    }
+
+    .nav-logout {
+        margin: 10px;
+    }
+
+    .nav-links a:link, .nav-links a:visited {
+        padding: 5px 10px;
+    }
+
+    .nav-head-logo, .nav-logout-logo {
+        height: 15px;
+        width: 25px;
+    }
+}
